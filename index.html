@@ -7,25 +7,31 @@
     <script>
         //custom JS/jQuery
         $(function(){
-                
-            });
-        
+              $("button").click(function(){
+                  var name = $("usarname").val();
+                  var age = $("age").val();
+                  var color = $("color").val()
+           });
+        });
     </script>
   </head>
   <style>
     div{
       height: 470px;
       background: linear-gradient(to right, #66ccff 0%, #000066 100%);
+      border-style: solid;
+      border-color: black;
+      border-width: 6px;
     }
   </style>
   <body>
   <div>
-  <p>Name: <input type="text" name="user"></p>
-  <p>Age: <input type="text" name="user"></p>
-  <p>Color: <input type="text" name="user"></p>
+  <p>Name: <input type="text" name="username"></p>
+  <p>Age: <input type="text" name="age"></p>
+  <p>Color: <input type="text" name="color"></p>
   <button>Click me when you are ready</button>
   
-  <h1
+  <h1></h1>
   </div>
    
   </body>
