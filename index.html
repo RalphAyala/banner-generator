@@ -8,9 +8,12 @@
         //custom JS/jQuery
         $(function(){
               $("button").click(function(){
+                   $("h1").css("color", color); 
                   var name = $("usarname").val();
                   var age = $("age").val();
-                  var color = $("color").val()
+                  var color = $("color").val();
+                   $("h1").val("Your name is " + usarname + " and you are " + age + " and welcome to my little jquery project.");
+                  
            });
         });
     </script>
