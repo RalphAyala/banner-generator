@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>jQuery Template</title>
-    <script>src="https://code.jquery.com/jquery-3.1.1.js"</script> 
-    <script>
-        //custom JS/jQuery
-        $(function(){
-              $("button").click(function(){
-                   $("h1").css("color", color); 
-                  var name = $("usarname").val();
-                  var age = $("age").val();
-                  var color = $("color").val();
-                   $("h1").val("Your name is " + usarname + " and you are " + age + " and welcome to my little jquery project.");
-                  
-           });
-        });
-    </script>
-  </head>
-  <style>
-    div{
-      height: 470px;
-      background: linear-gradient(to right, #66ccff 0%, #000066 100%);
-      border-style: solid;
-      border-color: black;
-      border-width: 6px;
-    }
-  </style>
-  <body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Template</title>
+  <script src = "https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script>
+    //custom JS/jQuery
+    $(function() {
+      $("button").click(function() {
+        var color = $("#color").val();
+        $("h1").css("background-color", color);
+        var name = $("#username").val();
+        var age = $("#age").val();
+        
+        $("h1").html("Your name is " + name + " and you are " + age + " and welcome to my little jquery project.");
+
+      });
+    });
+  </script>
+</head>
+<style>
+  div {
+    height: 470px;
+    background: linear-gradient(to right, #66ccff 0%, #000066 100%);
+    border-style: solid;
+    border-color: black;
+    border-width: 6px;
+  }
+</style>
+
+<body>
   <div>
-  <p>Name: <input type="text" name="username"></p>
-  <p>Age: <input type="text" name="age"></p>
-  <p>Color: <input type="text" name="color"></p>
-  <button>Click me when you are ready</button>
-  
-  <h1></h1>
+    <p>Name: <input type="text" id="username"></p>
+    <p>Age: <input type="text" id="age"></p>
+    <p>Color: <input type="text" id="color"></p>
+    <button>Click me when you are ready</button>
+
+    <h1></h1>
   </div>
-   
-  </body>
+
+</body>
+
 </html>
